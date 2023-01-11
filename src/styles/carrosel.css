@@ -1,0 +1,62 @@
+.react-slideshow-container{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: row;
+}
+.default-nav[data-type="prev"] {
+    display: flex;
+    position: absolute;
+    left:  0;
+}
+ .default-nav[data-type="next"] {
+    display: flex;
+    position: absolute;
+    right: 0;
+
+}
+ svg{
+     width: 10px;
+     height: 10px;
+     filter: invert(90%);
+ }
+ svg:hover{
+    filter: invert(50%);
+
+
+}
+
+
+.react-slideshow-container .default-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    position: absolute;
+    bottom: 125px;
+    width: 20px;
+    height: 20px;
+    z-index: 4;
+    
+}
+@media (max-width: 500px) {
+    .react-slideshow-container .default-nav {
+    bottom: 295px;
+    }
+    .default-nav[data-type="next"] {
+        right: 20px;
+    }
+    .default-nav[data-type="prev"] {
+        right: 90px;
+
+    }
+}
+.react-slideshow-container .default-nav:hover {
+    background: none;
+}
+.react-slideshow-container .default-nav:active {
+    background: none;
+}
+.react-slideshow-container .default-nav:focus {
+    background: none;
+}
