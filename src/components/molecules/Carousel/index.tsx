@@ -9,6 +9,8 @@ import '../../../styles/carrosel.css';
 import {
   Container,
   Img,
+  ImgMob,
+  ImgMobT,
   ImgTwo,
   P,
   Title,
@@ -38,6 +40,8 @@ function Carousel() {
       <Fade>
         <div className="each-fade">
           <Img src={fadeImages[0]} />
+          <ImgMob src={fadeImages[2]} />
+
           <Div>
             <BoxArrow />
 
@@ -57,6 +61,8 @@ function Carousel() {
         </div>
         <div className="each-fade">
           <ImgTwo src={fadeImages[1]} />
+          <ImgMobT src={fadeImages[3]} />
+
           <Div>
             <BoxArrow />
 
