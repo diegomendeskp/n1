@@ -11,6 +11,7 @@ ${({theme}) => css`
   width: 100%;
   height: 70px;
   align-items: center;
+  z-index: 5;
   @media (max-width: 500px) {
   }  
 `}
