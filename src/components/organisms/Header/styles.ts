@@ -9,7 +9,7 @@ export const Container = styled.div`
   justify-content: space-around;
   font-size: 20px;
   color: antiquewhite;
-  z-index: 1;
+  z-index: 10;
   @media (max-width: 500px) {
     height: 20%;
     

@@ -18,7 +18,9 @@ export const ImgCard = styled.img`
   max-width: 450px;
   max-height: 400px;
   text-align: center;
+
   background-color: #093846;
+  
   @media (max-width: 500px) {
     max-width: 300px;
     max-height: 350px;

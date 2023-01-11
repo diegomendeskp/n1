@@ -12,7 +12,6 @@ export const Img = styled.img`
   display: flex;
   position: relative;
   height: 80vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 0;
@@ -81,7 +80,7 @@ ${({theme}) => css`
   z-index: 9;
   color: ${theme.theme.colors.white};
   bottom: 180px;
-  right: 300px;
+  right: 25%;
   width: 400px;
   height: 100px;
   font-size: 15px;
@@ -100,7 +99,7 @@ ${({theme}) => css`
   position: absolute;
   color: ${theme.theme.colors.white};
   bottom: 340px;
-  right: 300px;
+  right: 25%;
   font-size: 40px;
   font-weight: bold;
   @media (max-width: 500px) {
@@ -116,7 +115,7 @@ ${({theme}) => css`
   position: absolute;
   color: ${theme.theme.colors.blue};
   bottom: 280px;
-  right: 330px;
+  right: 28%;
   font-size: 60px;
   font-weight: bold;
   @media (max-width: 500px) {
@@ -131,7 +130,7 @@ ${({theme}) => css`
   position: absolute;
   color: ${theme.theme.colors.blue};
   bottom: 315px;
-  right: 300px;
+  right: 25%;
   font-size: 20px;
   font-weight: bold;
   @media (max-width: 500px) {
@@ -219,3 +218,4 @@ ${({theme}) => css`
   }
   `}
 `;
+

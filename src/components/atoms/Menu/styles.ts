@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   display: flex;
   z-index: 6;
+  
 `;
 export const Button = styled.button`
 ${({theme}) => css`
@@ -36,7 +37,7 @@ display: none;
   min-width: 160px;
   border-radius: 5px;
   box-shadow: 11px 11px ${theme.theme.colors.blue};
-  z-index: 5;
+  z-index: 6;
   &:hover {
     display: flex;
   }
@@ -65,6 +66,7 @@ export const List = styled.ul`
   padding: 0px 16px;
   text-align: left;
   display: block;
+  
   @media (max-width: 500px) {
     font-size: 30px;
   }

@@ -4,15 +4,16 @@ export const Container = styled.div`
 ${({theme}) => css`
   display: flex;
   bottom: 0;
-  position: fixed;
+  left: 0;
+
+  position: absolute;
   flex-direction: row;
   align-content: center;
   background-color: ${theme.theme.colors.blue};
   width: 100%;
   height: 70px;
   align-items: center;
-  z-index: 5;
-  @media (max-width: 500px) {
-  }  
+  z-index: 1;
+ 
 `}
 `;
