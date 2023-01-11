@@ -5,10 +5,8 @@ import { LogoRush, Menu } from '../../atoms';
 function HeaderLeftSide() {
   return (
     <Container>
-      <React.Fragment>
-        <Menu />
-        <LogoRush />
-      </React.Fragment>
+      <Menu />
+      <LogoRush />
     </Container>
   );
 }

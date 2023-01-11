@@ -44,7 +44,6 @@ function Carousel() {
 
           <Div>
             <BoxArrow />
-
             <Title>MORTAL KOMBAT</Title>
             <SubTitleOne>MORTAL KOMBAT</SubTitleOne>
             <Number>1 / 2</Number>
