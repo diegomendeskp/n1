@@ -1,20 +1,16 @@
 .react-slideshow-container{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     position: relative;
-    flex-direction: row;
+    flex-direction: row-reverse;
+
 }
 .default-nav[data-type="prev"] {
     display: flex;
     position: absolute;
-    left:  0;
-}
- .default-nav[data-type="next"] {
-    display: flex;
-    position: absolute;
-    right: 0;
+    right: 50px;
 
-}
+ }
  svg{
      width: 10px;
      height: 10px;
@@ -25,7 +21,11 @@
 
 
 }
-
+ .default-nav[data-type="next"] {
+     display: flex;
+     position: absolute;
+     right: 0;
+ }
 
 .react-slideshow-container .default-nav {
     flex-direction: row;
@@ -34,9 +34,10 @@
     border-radius: 0px;
     position: absolute;
     bottom: 125px;
+    background: none;
     width: 20px;
     height: 20px;
-    z-index: 4;
+    z-index: 9;
     
 }
 @media (max-width: 500px) {

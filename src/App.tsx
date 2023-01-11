@@ -5,6 +5,7 @@ import Header from './components/organisms/Header';
 import theme from './styles/index';
 import { Container } from './global/styled.t';
 import Carousel from './components/molecules/Carousel';
+import Contrast from './components/organisms/Contrast';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Container>
         <Header />
         <Carousel />
+        <Contrast />
         <Footer />
       </Container>
     </ThemeProvider>

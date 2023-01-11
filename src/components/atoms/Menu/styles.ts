@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  z-index: 6;
 `;
 export const Button = styled.button`
 ${({theme}) => css`
