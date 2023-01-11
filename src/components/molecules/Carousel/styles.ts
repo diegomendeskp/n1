@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
@@ -74,10 +74,12 @@ export const Div = styled.div`
 `;
 
 export const P = styled.p`
+${({theme}) => css`
+
   position: absolute;
   display: flex;
   z-index: 9;
-  color: #ffffff;
+  color: ${theme.theme.colors.white};
   bottom: 180px;
   right: 300px;
   width: 400px;
@@ -89,12 +91,14 @@ export const P = styled.p`
     bottom: 100px;
     right: 50px;
     width: 300px;
-  }
+  }  
+  `}
 `;
 
 export const Title = styled.p`
+${({theme}) => css`
   position: absolute;
-  color: #ffffff;
+  color: ${theme.theme.colors.white};
   bottom: 340px;
   right: 300px;
   font-size: 40px;
@@ -104,11 +108,13 @@ export const Title = styled.p`
     right: 50px;
     font-size: 25px;
   }
+  `}
 `;
 
 export const Price = styled.span`
+${({theme}) => css`
   position: absolute;
-  color: #3ec6e0;
+  color: ${theme.theme.colors.blue};
   bottom: 280px;
   right: 330px;
   font-size: 60px;
@@ -118,10 +124,12 @@ export const Price = styled.span`
     right: 80px;
     font-size: 50px;
   }
+  `}
 `;
 export const Price2 = styled.span`
+${({theme}) => css`
   position: absolute;
-  color: #3ec6e0;
+  color: ${theme.theme.colors.blue};
   bottom: 315px;
   right: 300px;
   font-size: 20px;
@@ -130,10 +138,12 @@ export const Price2 = styled.span`
     bottom: 225px;
     right: 50px;
   }
+  `}
 `;
 export const BoxArrow = styled.div`
+${({theme}) => css`
   position: absolute;
-  background: #3ec6e0;
+  background: ${theme.theme.colors.blue};
   bottom: 110px;
   right: 0px;
   width: 40px;
@@ -145,11 +155,13 @@ export const BoxArrow = styled.div`
     width: 100%;
     height: 50px;
   }
+  `}
 `;
 export const SubTitleOne = styled.p`
+${({theme}) => css`
   position: absolute;
   display: flex;
-  color: #ffffff;
+  color: ${theme.theme.colors.white};
   bottom: 300px;
   right: -45px;
   font-size: 15px;
@@ -160,11 +172,13 @@ export const SubTitleOne = styled.p`
     bottom: 15px;
     left: 10px;
   }
+  `}
 `;
 export const SubTitleTwo = styled.p`
+${({theme}) => css`
   position: absolute;
   display: flex;
-  color: #ffffff;
+  color: ${theme.theme.colors.white};
   bottom: 300px;
   right: -25px;
   font-size: 15px;
@@ -175,18 +189,20 @@ export const SubTitleTwo = styled.p`
     bottom: 15px;
     left: 10px;
   }
+  `}
 `;
 export const Number = styled.p`
+${({theme}) => css`
   position: absolute;
   display: flex;
   align-items: flex-start;
   padding-top: 15px;
   justify-content: center;
   text-align: center;
-  color: #ffffff;
+  color: ${theme.theme.colors.white};
   bottom: 110px;
   right: 0px;
-  background: #084154;
+  background: ${theme.theme.colors.darkblue};
   width: 40px;
   height: 70px;
   font-size: 15px;
@@ -201,4 +217,5 @@ export const Number = styled.p`
     justify-content: flex-start;
     padding-left: 30px;
   }
+  `}
 `;
