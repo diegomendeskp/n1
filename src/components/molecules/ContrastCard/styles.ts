@@ -45,4 +45,19 @@ export const ShopDiv = styled.div`
   gap: 20px;
   align-items: center;
   justify-content: center;
+  @media (max-width: 500px) {
+    display: none;
+  }
+`;
+
+export const Mobile = styled.div`
+    display: none;
+  @media (max-width: 500px) {
+    display: flex;
+    max-width: 350px;
+    height: 480px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
 `;
