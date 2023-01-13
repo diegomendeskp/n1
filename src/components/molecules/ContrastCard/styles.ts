@@ -9,6 +9,7 @@ export const Container = styled.div`
   height: auto;
   gap: 50px 40px;
   z-index: 1;
+  margin-bottom: 100px;
   @media (max-width: 500px) {
     margin-top: 110px;
   }
