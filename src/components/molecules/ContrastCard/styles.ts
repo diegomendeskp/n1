@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   width: auto;
   height: auto;
@@ -54,10 +55,14 @@ export const Mobile = styled.div`
     display: none;
   @media (max-width: 500px) {
     display: flex;
-    max-width: 350px;
-    height: 480px;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  max-width: 300px;
+  z-index: 1;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
   }
 `;
