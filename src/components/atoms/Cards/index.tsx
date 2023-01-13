@@ -1,5 +1,4 @@
 import React from 'react';
-import { P } from '../../molecules/ContrastCard/styles';
 import { Container, ImgCard, Div, Text, Line } from './styles';
 import zelda from '../../imgs/zelda_banner.jpg';
 import sekiro from '../../imgs/sekiro_banner.jpg';

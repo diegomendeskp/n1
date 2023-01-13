@@ -6,17 +6,22 @@ import theme from './styles/index';
 import { Container } from './global/styled.t';
 import Carousel from './components/molecules/Carousel';
 import Contrast from './components/organisms/Contrast';
+import { ModalProvider } from './context';
+import PurchaseModal from './components/organisms/PurchaseModal';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Container>
-        <Header />
-        <Carousel />
-        <Contrast />
-        <Footer />
-      </Container>
-    </ThemeProvider>
+    <ModalProvider>
+      <ThemeProvider theme={theme}>
+        <Container>
+          <Header />
+          <Carousel />
+          <Contrast />
+          <Footer />
+          <PurchaseModal />
+        </Container>
+      </ThemeProvider>
+    </ModalProvider>
   );
 }
 
