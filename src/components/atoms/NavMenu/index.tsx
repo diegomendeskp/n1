@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
+
 import icon from '../../icons/icon_hamburguer.svg';
 import {
   Container,
@@ -12,17 +13,22 @@ import {
   Square,
   CloseBtn,
 } from './styles';
-export function Menu() {
+export function NavMenu() {
+  const [showNav, setShowNav] = useState(false);
+
   return (
     <Container>
-      <Button>
+      <Button onMouseEnter={() => setShowNav(true)}>
         <Icon src={icon} />
       </Button>
-      <Div>
+      <Div
+        style={{ display: showNav ? 'flex' : 'none' }}
+        onMouseLeave={() => setShowNav(false)}
+      >
         <Square />
 
         <List>
-          <CloseBtn>X</CloseBtn>
+          <CloseBtn onClick={() => setShowNav(false)}>X</CloseBtn>
           <li>
             <Span>Luta</Span>
           </li>
@@ -73,4 +79,4 @@ export function Menu() {
     </Container>
   );
 }
-export default Menu;
+export default NavMenu;

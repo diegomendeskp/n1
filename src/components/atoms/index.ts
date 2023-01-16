@@ -1,4 +1,4 @@
-export * from './Menu';
+export * from './NavMenu';
 export * from './Contact';
 export * from './Search';
 export * from './Bag';
