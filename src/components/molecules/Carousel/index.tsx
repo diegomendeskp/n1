@@ -4,7 +4,6 @@ import image1 from '../../imgs/principal_banner_desktop.jpg';
 import image2 from '../../imgs/principal_banner_desktop_02.jpg';
 import image3 from '../../imgs/principal_banner_mobile.jpg';
 import image4 from '../../imgs/principal_banner_mobile_02.jpg';
-import '../../../styles/carrosel.css';
 
 import {
   Container,

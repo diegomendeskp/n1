@@ -1,19 +1,24 @@
 .react-slideshow-container{
     display: flex;
-    justify-content: flex-end;
     position: relative;
-    flex-direction: row-reverse;
-
 }
-.default-nav[data-type="prev"] {
+.react-slideshow-container .nav:first-of-type{
+    left: 97%;
+}
+.react-slideshow-container .default-nav:first-of-type{    
     display: flex;
     position: absolute;
-    right: 50px;
-
- }
+   
+ } 
+ @media  (max-width: 500px) {
+    .react-slideshow-container .default-nav:first-of-type{    
+        right: 70px;
+        left: 87%;
+    }
+    }
  svg{
-     width: 10px;
-     height: 10px;
+     width: 15px;
+     height: 15px;
      filter: invert(90%);
  }
  svg:hover{
@@ -39,18 +44,12 @@
     height: 20px;
     z-index: 9;
     
-}
+}   
 @media (max-width: 500px) {
     .react-slideshow-container .default-nav {
     bottom: 295px;
     }
-    .default-nav[data-type="next"] {
-        right: 20px;
-    }
-    .default-nav[data-type="prev"] {
-        right: 90px;
-
-    }
+   
 }
 .react-slideshow-container .default-nav:hover {
     background: none;

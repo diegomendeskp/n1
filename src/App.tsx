@@ -8,7 +8,7 @@ import Carousel from './components/molecules/Carousel';
 import Contrast from './components/organisms/Contrast';
 import { ModalProvider } from './context';
 import PurchaseModal from './components/organisms/PurchaseModal';
-
+import './styles/carrosel.css';
 function App() {
   return (
     <ModalProvider>
