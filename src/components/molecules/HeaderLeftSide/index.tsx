@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container } from './styles';
-import { LogoRush, Menu } from '../../atoms';
+import { LogoRush, NavMenu } from '../../atoms';
 
 function HeaderLeftSide() {
   return (
     <Container>
-      <Menu />
+      <NavMenu />
       <LogoRush />
     </Container>
   );

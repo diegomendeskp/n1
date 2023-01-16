@@ -21,13 +21,15 @@ ${({theme}) => css`
   cursor: pointer;
   &:hover + Div {
     display: flex;
+    
+
   }
   
   `}
 `;
 export const Div = styled.div`
 ${({theme}) => css`
-display: none;
+  display: none;
   margin-top: 60px;
   padding: 20px 10px;
   text-align: left;
@@ -38,6 +40,7 @@ display: none;
   border-radius: 5px;
   box-shadow: 11px 11px ${theme.theme.colors.blue};
   z-index: 6;
+  
   &:hover {
     display: flex;
   }
@@ -56,7 +59,7 @@ display: none;
     margin: 0;
     left: 0;
     top: 0;
-    z-index: 5;
+    z-index: 6;
   }
 `}
 `;
@@ -137,16 +140,13 @@ export const CloseBtn = styled.button`
   background: none;
   color: #ffffff;
   @media (max-width: 500px) {
-    display: block;
+    display: flex;
+
     font-size: 30px;
     width: auto;
     cursor: pointer;
-    &:hover Div {
-      display: flex;
-    }
-    &:active  {
-      background-color: black;
-  
-    }
+    &:active + Div {
+    display: none;
+  }
   }
 `;
